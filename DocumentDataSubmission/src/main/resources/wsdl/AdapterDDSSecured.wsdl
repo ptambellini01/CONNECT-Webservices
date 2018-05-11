@@ -14,9 +14,9 @@
 	xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" 
 	xmlns:sc="http://schemas.sun.com/2006/03/wss/server"
 	xmlns:wspp="http://java.sun.com/xml/ns/wsit/policy" 
-	name="AdapterDDSSecured" 
+	name="AdapterddsSecured" 
 	targetNamespace="urn:gov:hhs:fha:nhinc:adapterddssecured:data">
-    <documentation>IHE dds Document Repository</documentation>
+    <documentation>IHE DDS Document Repository</documentation>
     <types>
         <xsd:schema>
             <xsd:import namespace="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" schemaLocation="classpath:schemas/ebRS/rs.xsd"/>

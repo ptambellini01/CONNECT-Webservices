@@ -8,7 +8,7 @@
              xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
              xmlns:nccommonadapter="urn:gov:hhs:fha:nhinc:common:nhinccommonadapter"
              xmlns:wsaws="http://www.w3.org/2005/08/addressing"
-             xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AdapterDDS"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Adapterdds"
              targetNamespace="urn:gov:hhs:fha:nhinc:adaptercomponentdds:data">
 	<documentation>IHE DDS Document Repository</documentation>
 	<types>
@@ -28,13 +28,13 @@
 		<documentation>Register Document Set Response</documentation>
 		<part name="body" element="rs:RegistryResponse"/>
 	</message>
-	<portType name="AdapterComponentDDS_PortType">
+	<portType name="AdapterComponentdds_PortType">
 		<operation name="RegisterDocumentSetb">
-			<input message="tns:RegisterDocumentSet-b_Message" wsaw:Action="urn:gov:hhs:fha:nhinc:adaptercomponentDDS:data:RegisterDocumentSet-b"/>
-			<output message="tns:RegisterDocumentSet-bResponse_Message" wsaw:Action="urn:gov:hhs:fha:nhinc:adaptercomponentDDS:data:RegisterDocumentSet-bResponse"/>
+			<input message="tns:RegisterDocumentSet-b_Message" wsaw:Action="urn:gov:hhs:fha:nhinc:adaptercomponentdds:data:RegisterDocumentSet-b"/>
+			<output message="tns:RegisterDocumentSet-bResponse_Message" wsaw:Action="urn:gov:hhs:fha:nhinc:adaptercomponentdds:data:RegisterDocumentSet-bResponse"/>
 		</operation>
 	</portType>
-	<binding name="AdapterComponentDDS_Binding" type="tns:AdapterComponentDDS_PortType">
+	<binding name="AdapterComponentdds_Binding" type="tns:AdapterComponentdds_PortType">
 		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
 		<operation name="RegisterDocumentSetb">
 			<input>
@@ -45,8 +45,8 @@
 			</output>
 		</operation>
 	</binding>
-	<service name="AdapterComponentDDS_Service">
-		<port name="AdapterComponentDDS_Port" binding="tns:AdapterComponentDDS_Binding">
+	<service name="AdapterComponentdds_Service">
+		<port name="AdapterComponentdds_Port" binding="tns:AdapterComponentdds_Binding">
 			<soap:address location="http://localhost:${HttpDefaultPort}/Adapter/DocumentDataSubmission/A_0/AdapterComponentDocDataSubmissionUnsecured"/>
 		</port>
 	</service>
