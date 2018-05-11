@@ -40,7 +40,7 @@
             <output message="tns:RegisterDocumentSet-bResponse_Message" wsaw:Action="urn:gov:hhs:fha:nhinc:adaptercomponentddssecured:data:RegisterDocumentSet-bResponse"/>
         </operation>
     </portType>
-    <binding name="AdapterSecured_Binding" type="tns:AdapterComponentddsSecured_PortType">
+    <binding name="AdapterComponentddsSecured_Binding" type="tns:AdapterComponentddsSecured_PortType">
         <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
         <wsp:PolicyReference URI="#AdapterComponentddsPolicy"/>
         <operation name="RegisterDocumentSetb">
@@ -55,7 +55,7 @@
         </operation>
     </binding>
     <service name="AdapterComponentSecured_Service">
-        <port name="AdapterComponentddsecured_Port" binding="tns:AdapterddsSecured_Binding">
+        <port name="AdapterComponentddsecured_Port" binding="tns:AdapterComponentddsSecured_Binding">
             <soap:address location="https://localhost:${HttpsDefaultPort}/Adapter/DocumentDataSubmission/A_0/AdapterComponentDocDataSubmissionSecured"/>
         </port>
     </service>
